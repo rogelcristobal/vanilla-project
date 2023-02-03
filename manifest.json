@@ -1,0 +1,18 @@
+{
+  "manifest_version":3,
+  "name": "digiCreator",
+  "version": "1.0",
+  "description": "digiDirect external content creator/product listing tool",
+  "browser_action":{
+    "default-popup":"dist/index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "background": {
+    "service_worker": "src/background_worker.js"
+  }
+}
